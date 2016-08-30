@@ -1,5 +1,6 @@
-import {Common} from './mip.common';
+// import {Common} from './mip.common';
 
-export class MipController extends Common {
+// export class Mip extends Common {
+export class Mip {
   
 }

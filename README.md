@@ -74,3 +74,7 @@ cd nativescript-plugin-seed
 
 // Improve!
 ```
+
+Explain about adding wowwee BluetoothLeService to AndroidManifest.xml inside app/App_Resources/Android/
+<service android:name="com.wowwee.bluetoothrobotcontrollib.BluetoothLeService" android:enabled="true"/>
+for some reason it breaks the build when I add it directly to the plugin to platform/android

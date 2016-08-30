@@ -1,17 +1,13 @@
-// import {Common} from './mip.common';
 import app = require("application");
 
 declare var com: any;
 var MipRobotSound = com.wowwee.bluetoothrobotcontrollib.MipRobotSound;
 var MipCommandValues = com.wowwee.bluetoothrobotcontrollib.MipCommandValues;
 
-// export class Mip extends Common {
-export class Mip {
+export class Mip{
     mip: any;
 
     constructor(nativeMip: any) {
-        // super();
-
         this.mip = nativeMip;
     }
 

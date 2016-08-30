@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "removeComments": true,
+        "removeComments": false,
         "experimentalDecorators": true,
         "noEmitHelpers": true,
         "declaration": true
@@ -12,9 +12,11 @@
       "node_modules/tns-platform-declarations/tns-core-modules/android17.d.ts",
       "node_modules/tns-platform-declarations/tns-core-modules/ios.d.ts",
       "node_modules/tns-platform-declarations/tns-core-modules/org.nativescript.widgets.d.ts",
-      "mip.common.ts",
+    //   "mip.common.ts",
       "mip.android.ts", 
-      "mip.ios.ts"
+    //   "mip.ios.ts",
+      "mip-finder.android.ts",
+      "ble-utils.android.ts"
     ],
     "compileOnSave": false
 }
