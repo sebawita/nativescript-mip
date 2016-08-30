@@ -6,7 +6,7 @@
 ### To rebuild the plugin
 
 ```
-"preparedemo": "npm run build; cd demo; tns plugin remove nativescript-yourplugin; tns plugin add ..; tns install",
+npm run preparedemo
 ```
 
 ### To run the demo project:
