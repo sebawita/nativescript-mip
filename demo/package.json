@@ -9,6 +9,7 @@
     }
   },
   "dependencies": {
+    "nativescript-joystick": "^0.3.0",
     "nativescript-mip": "file:..",
     "tns-core-modules": "^2.2.0"
   },

@@ -1,7 +1,5 @@
 import {Observable} from 'data/observable';
 
-//import {MipFinder} from './plugin/mip-finder';
-//import {Mip} from './plugin/mip';
 import {MipFinder} from 'nativescript-mip/mip-finder';
 import {Mip} from 'nativescript-mip';
 
@@ -12,6 +10,9 @@ export class HelloWorldModel extends Observable {
   private mipFinder: MipFinder;
 
   private mip: Mip;
+
+  driveDirection: number = 0;
+  turnDirection: number = 0;
 
   constructor() {
     super();
@@ -61,18 +62,10 @@ export class HelloWorldModel extends Observable {
         console.log("stopScanForMips");
     }
 
-    turn: number = 0.2;
-    direction: number = 0.8;
-
+    loop = 0;
     mipDriveTest() {
-      var counter = 20;
-
-      var loop = setInterval( () => {
-            this.mip.drive(this.turn, this.direction);
-
-            if(counter-- < 0) {
-              clearInterval(loop);
-            }
+        this.loop = setInterval( () => {
+            this.mip.drive(this.turnDirection/100, this.driveDirection/100);
         }, 50);
     }
 
